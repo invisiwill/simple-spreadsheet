@@ -1,6 +1,6 @@
 class CsvExtended < Roo::CSV
   def initialize(path)
-    super(path, csv_options: { col_sep: "," })
+    super(path, csv_options: { col_sep: ",", encoding: Encoding::ISO_8859_1  })
   end
 
   def foreach(sheet = nil, &block)
